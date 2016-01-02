@@ -26,6 +26,7 @@ namespace Info_Generator
         public TMDbClient client = new TMDbClient(APIKey);                                              //Initialise Client
         public List<int> id = new List<int>();                                                          //Public Id List (Used for selecting further infomation)
         public int selection, selected;
+        public static List<string> images = new List<string>();
 
         public MainWindow()
         {
@@ -97,7 +98,10 @@ namespace Info_Generator
             }
         }
 
-
+        private void test_Click(object sender, RoutedEventArgs e)
+        {
+            images_debug.Text = images[0];
+        }
 
         private void info_Grab_Click(object sender, RoutedEventArgs e)
         {
