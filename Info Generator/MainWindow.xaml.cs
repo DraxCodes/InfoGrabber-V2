@@ -37,8 +37,8 @@ namespace Info_Generator
         //----------------------------------------
         private void sampImg_Click(object sender, RoutedEventArgs e)
         {
-            var _addSamps = new SampImg();
-            _addSamps.Show();
+            var addSamps = new SampImg();
+            addSamps.Show();
 
         }
 

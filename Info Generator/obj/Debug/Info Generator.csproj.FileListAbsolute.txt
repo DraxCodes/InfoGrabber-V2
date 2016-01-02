@@ -18,3 +18,6 @@ c:\users\joel\documents\visual studio 2015\Projects\Info Generator_Solution\Info
 c:\users\joel\documents\visual studio 2015\Projects\Info Generator_Solution\Info Generator\bin\Debug\RestSharp.xml
 c:\users\joel\documents\visual studio 2015\Projects\Info Generator_Solution\Info Generator\bin\Debug\TMDbLib.pdb
 c:\users\joel\documents\visual studio 2015\Projects\Info Generator_Solution\Info Generator\obj\Debug\Info Generator.csprojResolveAssemblyReference.cache
+C:\Users\joel\Desktop\git_pulls\Info Generator_Solution\Info Generator\bin\Debug\Info Generator.exe.config
+C:\Users\joel\Desktop\git_pulls\Info Generator_Solution\Info Generator\obj\Debug\Info Generator.exe
+C:\Users\joel\Desktop\git_pulls\Info Generator_Solution\Info Generator\obj\Debug\Info Generator.pdb
