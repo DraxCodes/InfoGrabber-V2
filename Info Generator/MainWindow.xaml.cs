@@ -26,6 +26,10 @@ namespace Info_Generator
         public TMDbClient client = new TMDbClient(APIKey);                                              //Initialise Client
         public List<int> id = new List<int>();                                                          //Public Id List (Used for selecting further infomation)
         public int selection, selected;
+<<<<<<< HEAD
+=======
+        public static List<string> images = new List<string>();
+>>>>>>> 21449ce88478c7d7f2f961589bd0f943cddbed2c
 
         public MainWindow()
         {
@@ -37,8 +41,13 @@ namespace Info_Generator
         //----------------------------------------
         private void sampImg_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             var _addSamps = new SampImg();
             _addSamps.Show();
+=======
+            var addSamps = new SampImg();
+            addSamps.Show();
+>>>>>>> 21449ce88478c7d7f2f961589bd0f943cddbed2c
 
         }
 
@@ -97,7 +106,14 @@ namespace Info_Generator
             }
         }
 
+<<<<<<< HEAD
 
+=======
+        private void test_Click(object sender, RoutedEventArgs e)
+        {
+            images_debug.Text = images[0];
+        }
+>>>>>>> 21449ce88478c7d7f2f961589bd0f943cddbed2c
 
         private void info_Grab_Click(object sender, RoutedEventArgs e)
         {
