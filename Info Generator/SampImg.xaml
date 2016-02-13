@@ -5,27 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Info_Generator"
         mc:Ignorable="d"
-<<<<<<< HEAD
         Title="SampImg" Height="500" Width="600">
     <Grid>
         
-=======
-        Title="Sample Images" Height="232" Width="453.835">
-    <Grid HorizontalAlignment="Left" Width="444">
-        <Label x:Name="label" Content="Select Images" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF0097FF" FontWeight="Bold" FontSize="21.333"/>
-        <Button x:Name="addSamples" Content="Add Sample Images" HorizontalAlignment="Left" Margin="6,166,-90,0" VerticalAlignment="Top" Width="427" Click="button_Click"/>
-        <TextBox x:Name="imgA" HorizontalAlignment="Left" Height="23" Margin="6,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
-        <TextBox x:Name="imgB" HorizontalAlignment="Left" Height="23" Margin="6,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
-        <TextBox x:Name="imgC" HorizontalAlignment="Left" Height="23" Margin="6,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
-        <TextBox x:Name="imgD" HorizontalAlignment="Left" Height="23" Margin="6,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
-        <Label x:Name="label1" Content="Browse or Enter URLS of Sample Images" HorizontalAlignment="Left" Margin="186,10,0,0" VerticalAlignment="Top" Foreground="#FF03348B"/>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="326,39,0,0" VerticalAlignment="Top" Width="107" Height="23" Click="button1_Click"/>
-        <Button x:Name="bOpenFileDialog" Content="Open File"
-                 Height="30" Width="60" Margin="348,96,0,0"
-                 HorizontalAlignment="Left" VerticalAlignment="Top" 
-                 Click="bOpenFileDialog_Click" />
-
-
->>>>>>> 21449ce88478c7d7f2f961589bd0f943cddbed2c
     </Grid>
 </Window>
