@@ -26,6 +26,8 @@ namespace Info_Generator
         public TMDbClient client = new TMDbClient(APIKey);                                              //Initialise Client
         public List<int> id = new List<int>();                                                          //Public Id List (Used for selecting further infomation)
         public int selection, selected;
+        public static List<string> images = new List<string>();
+        public static List<string> sampURLs = new List<string>();
 
         public MainWindow()
         {
@@ -37,8 +39,8 @@ namespace Info_Generator
         //----------------------------------------
         private void sampImg_Click(object sender, RoutedEventArgs e)
         {
-            var _addSamps = new SampImg();
-            _addSamps.Show();
+            var addSamps = new SampImg();
+            addSamps.Show();
 
         }
 
@@ -85,19 +87,27 @@ namespace Info_Generator
         {
             movieList.Items.Clear();
             id.Clear();                                                                                                         //Clear Id List For Renewal
-            char[] del = { ' ' };                                                                                               //Spliting Chars variable (Split by white space)
+            char[] del = { ' ' };                                                                     
+           //Spliting Chars variable (Split by white space)
             SearchContainer<SearchMovie> results = client.SearchMovie(searchName, 0, true, 0);                                  //Results list with all search results
             foreach (SearchMovie result in results.Results)                                                                     //Loop to add each list item to combobox
             {
                 id.Add(result.Id);                                                                                              //Add Movie ID to List    
                 string originalRelDate = Convert.ToString(result.ReleaseDate);                                                  //Variable for OriginalRelease date :: Format (04/04/1991 00:00:00)
                 string[] splitRelDates = originalRelDate.Split(del);                                                            //Split OriginalDate Variable by spaces, add to array
-                string relDate = splitRelDates[0];                                                                              //Select only first part of array from split
+                string relDate = splitRelDates[0];                                                                             //Select only first part of array from split
                 movieList.Items.Add(result.OriginalTitle + " :: " + relDate);                                                   //Final print out in combobox :: Format (Avatar :: 08/12/2009)
             }
         }
 
-
+        private void test_Click(object sender, RoutedEventArgs e)
+        {
+            if ( sampURLs.Count > 0 ) {
+                foreach ( string url in sampURLs ) {
+                    txtTest.AppendText(url + Environment.NewLine);
+                }
+            }
+        }
 
         private void info_Grab_Click(object sender, RoutedEventArgs e)
         {
